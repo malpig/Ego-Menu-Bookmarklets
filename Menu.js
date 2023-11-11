@@ -773,6 +773,7 @@ div#egoCookieClickerContainer {
       <div class="egoButtonHolder">
 
       <button class="EgoMenuButton" id="fetchButton">EdPuzzle Hacks</button>
+      <button class="EgoMenuButton" id="fetchBlooket">Blooket Hacks</button>
       </div>
       </div>
       <div class="EgoPage" id="EgoPage3">
@@ -1002,9 +1003,18 @@ div#egoCookieClickerContainer {
           .then(r => r.text())
           .then(r => eval(r));
   });
- 
+
+      
+   var fetchBlooket = document.getElementById("fetchBlooket");
+  fetchBlooket.addEventListener("click", function() {
+      fetch("https://raw.githubusercontent.com/05Konz/Blooket-Cheats/main/cheats/reactGui.js")
+          .then(r => r.text())
+          .then(r => eval(r));
+  });
 
 
+
+      
 
 javascript:(function(){
   var abcScript = document.createElement('script');
